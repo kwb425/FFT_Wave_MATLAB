@@ -30,7 +30,7 @@ S.nyquist = S.sr * 1/2; % Nyquist frequency
 S.nyquist_x_axis = ...
     S.sr * (1:S.frame_size/2) / S.frame_size; % Nyquist for plotting
 S.interval = 0.1; % Interval for each record_obj_callback
-S.max_buffer = 29; % To prevent blow up
+S.max_buffer = 99; % To prevent blow up
 S.window = hamming(length(S.frame_size)); % Windowing, hann() works too.
 
 %%% For cutting
